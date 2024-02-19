@@ -4,10 +4,11 @@ First of all, it helps entry-level developers understand how to work in the obje
 """
 
 class MoneyMachine:
-    def __init__(self):
-        self.balance = 50000
+    def __init__(self):                     # this function creates and initializes new account (object of the class)
+        status = float(input("Enter your account status: "))
+        self.balance = status 
 
-    def deposit(self, amount):
+    def deposit(self, amount):              # this function allows you to deposit money to your account
         if amount > 0:
             self.balance += amount
             print(f"You deposited {amount} euro")
@@ -15,7 +16,7 @@ class MoneyMachine:
         else:
             print("The deposit amount must be positive.")
 
-    def withdraw(self, amount):
+    def withdraw(self, amount):             # this function allows you to deposit money from your account
         if 0 < amount <= self.balance:
             self.balance -= amount
             print(f"You withdrew {amount} euro")
@@ -25,10 +26,11 @@ class MoneyMachine:
         else:
             print("The amount to withdraw must be positive and not more than your balance.")
 
-    def display_balance(self):
+    def display_balance(self):              # this function shows the current status of your account
         print(f"Current balance: {self.balance} euro")
 
 
+# Create a new object of the 'MoneyMachine' class
 atm = MoneyMachine()
 
 print("""
@@ -43,10 +45,11 @@ Choose Transaction
 
 """)
 
+# User chooses a transaction
 option = int(input("Enter Transaction "))
 
 if(option == 1):
-    atm.display_balance()
+    atm.display_balance() # call the corresponding function using the class name
 elif(option==2):
     amount = float(input("Enter amount to withdraw "))
     atm.withdraw(amount)
