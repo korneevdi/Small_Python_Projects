@@ -7,7 +7,7 @@ In addition, you can calculate the finishing time if you know the distance and p
 
 
 # Calculate the desired pace
-# This function takes a distance in km (float) and a time in the form hh:mm:ss (string)
+# This function takes a distance in km (float) and a time in the form "hh:mm:ss" (string)
 
 def pace(dist, time):
     T = time.split(":")
@@ -21,7 +21,7 @@ def pace(dist, time):
 
 
 # Calculate the finish time
-# This function takes a distance in km (float) and a pace in the form mm:ss (string)
+# This function takes a distance in km (float) and a pace in the form "mm:ss" (string)
 
 def time(dist, pace):
     P = pace.split(":")
