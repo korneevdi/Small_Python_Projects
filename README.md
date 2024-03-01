@@ -2,6 +2,6 @@ This repository contains a collection of various Python utility functions that I
 
 To use one of these programs, you can clone the repository using the command
 
-"git clone https://github.com/korneevdi/Small_Python_Projects.git"
+<pre><code> git clone https://github.com/korneevdi/Small_Python_Projects.git </code></pre>
 
 After that, open the file you need in the development environment you are working in and run it.
